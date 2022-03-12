@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+
+<!-- og -->
+  <meta property="og:title" content="Chae Lyeon Kim's Web & UI/UX Work Page" >
+  <meta property="og:url" content="#" >
+  <meta property="og:image" content="#" >
+  <meta property="og:desctiption" content="김채련의 웹 & UI/UX 작업 페이지입니다" >
+<!-- twitter -->
+  <meta name="twitter:card" content="Chae Lyeon Kim's Web & UI/UX Work Page">
+  <meta name="twitter:url" content="#">
+  <meta name="twitter:image" content="#">
+  <meta name="twitter:description" content="김채련의 웹 & UI/UX 작업 페이지입니다">
+
+  <title>ChaeLyeon Kim's Web & UI/UX Work Page</title>
+  <!-- favicon -->
+  <link rel="icon" href="../common/favicon/favicon.ico" size="any">
+  <link rel="svg" href="../common/favicon/favicon.svg" size="any">
+  <link rel="apple-touch-icon" href="../common/favicon/apple-touch-icon 180x180.png">
+  <link rel="manifest" href="../common/favicon/manifest.json"> 
+  <link rel="icon" href="../common/favicon/192x192.png" type="image/svg+xml">
+  <link rel="icon" href="../common/favicon/512x512.png" type="image/svg+xml">
+  <!-- fonts -->
+  <link rel="stylesheet" href="../common/css/fonts.css">
+  <!-- css -->
+  <link rel="stylesheet" href="../common/css/style.css">
+  <link rel="stylesheet" href="../common/css/HeaderMenu.css">
+  <link rel="stylesheet" href="WebUIUXwork.css">
+  <!-- script -->
+  <script src="../common/scripts/prefixfree.min.js"></script>
+  <script src="../common/scripts/jquery-3.6.0.min.js"></script>
+  <script defer src="../common/scripts/menu.js"></script>
+
+</head>
+<body>
+<div class="container">
+  <header>
+    <!-- 현재 페이지 -->
+    <h1><a href="/">WEB & UI/UX WORK</a></h1>
+  </header>
+  <div class="hamburger_menu">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <div id="menu_wrapper">
+    <nav id="menu">
+      <ul>
+        <li>
+          <a href="../index.html">HOME</a>
+        </li>
+        <li>
+          <a href="/">
+            WEB & UI/UX WORK
+          </a>
+        </li>
+        <li>
+          <a href="work_nav/#">DESIGN WORK</a>
+        </li>
+        <li>
+          <a href="../about.html">ABOUT ME</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <main>
+    <div class="guide">
+      <h1>Publishing Guide</h1>
+      <div class="guide_wrap">
+        <div class="open_btn">
+          <div class="more">더보기</div>
+          <div class="close">닫기</div>
+        </div>
+        <div class="content og">
+          <h2>•&nbsp; Open Graph</h2>
+          <div>
+            <span>
+              : 원활한 SNS 링크 공유를 목표로 대표적인 sns 오픈그래피 적용 
+              <div>
+                <span>
+                  - &lt; meta property="og" &gt;적용
+                </span>
+                <span>
+                  - &lt; meta name="twitter" &gt;적용
+                </span>
+              </div>
+            </span>
+          </div>
+        </div>
+        <div class="content favicon">
+          <h2>•&nbsp; Favicon</h2>
+          <div>        
+            <span>: 5개의 이미지와 1개의 JSON 파일로 파비콘 최적화</span>
+            <div>
+              <span>
+                - .ico 32x32: 예전 브라우저들
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="toggle">
+          <div class="content favicon_toggle">
+            <h2></h2>
+            <div>
+              <span>
+                - .svg: 대부분 최신 브라우저들, 다크모드도 지원
+              </span>
+              <span>
+                - apple-touch-icon 180x180: 애플 기기
+              </span>
+              <span>
+                - 192x192: 홈스크린
+              </span>
+              <span>
+                - manifest(JSON): PWA 및 안드로이드 기기
+              </span>
+              <span>
+                - 512x512: PWA 로딩시 스플래시 스크린용
+              </span>
+            </div>
+          </div>
+          <div class="content html5">
+            <h2>•&nbsp;HTML5</h2>
+            <div>
+              <span>
+                - W3C기준 
+              </span>
+              <span>
+                - 자식,자손 요소 들여쓰기
+              </span>
+              <span>
+                - 디바이스별 환경 극복을 위한 meta[name: viewport] 설정
+              </span>
+              <span>
+                - css vendor의 손쉬운 적용을 위해 prefixfree.js 연결
+              </span>
+              <span>
+                - header/ main/ aside/ footer를 이용하여 영역 분리
+              </span>
+              <span>
+                - img 태그 사용시 alt값 필수 작성
+              </span>
+              <span>
+                - 외부 링크는 a 태그 사용
+                <div>
+                  <span>
+                    : 빈 링크의 href의 값은 #로 통일
+                  </span>
+                </div>
+              </span>
+              <span>
+                - 식별자명 규칙
+                <div>
+                  <span>
+                    - id값을 중복 사용하지 않는다
+                  </span>
+                  <span>
+                    - 첫글자는 알파벳으로 시작
+                  </span>
+                  <span>
+                    -알파벳, 숫자, 언더바(_)를 조합하여 부여
+                  </span>
+                </div>
+              </span>
+            </div>
+          </div>
+          <div class="content css3">
+            <h2>•&nbsp;CSS3</h2>
+            <div>
+              <span>
+                - 첫줄에 인코딩 선언 @charset "UTF-8";
+              </span>
+              <span>
+                - 웹페이지 공통 css속성은 common폴더 속 style.css에 작성
+              </span>
+              <span>
+                - 주석을 이용하여 영역별 css 구분
+              </span>
+              <span>
+                - 모든 속성선언 끝에 세미콜론(;) 작성
+              </span>
+            </div>
+          </div>
+          <div class="content name">
+            <h2>•&nbsp;파일명</h2>
+            <div>
+              <span>
+                - 웹페이지의 첫 페이지는 index.html로 통일
+              </span>
+              <span>
+                - 파일명 알파벳, 숫자, 언더바(_)를 조합하여 부여
+              </span>
+              <span>
+                - 명확하고 간결하게 네이밍한다.
+              </span>
+            </div>
+          </div>
+          <div class="content folder">
+            <h2>•&nbsp;폴더 구조</h2>
+            <div>
+              <span>
+                - common: 
+                <div>
+                  <span>
+                    - css : 페이지에 공통으로 연결된 style.css및 font.css가 담겨있는 폴더
+                  </span>
+                  <span>
+                    - favicon: 6개의 이미지와 1개의 JSON 파일이 담겨있는 폴더
+                  </span>
+                  <span>
+                    - fonts: 웹폰트를 제외한 폰트 파일이 담겨있는 폴더
+                  </span>
+                  <span>
+                    - images: 웹에서 사용된 모든 이미지가 담겨있는 폴더
+                  </span>
+                  <span>
+                    - scripts: 페이지에 공통으로 연결된.js 파일이 담겨있는 폴더
+                  </span>
+                </div>
+              </span>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="work work1">
+      <div class="top">
+        <div class="top_txt">
+          <!-- 작업 type -->
+          <h1>LUSH korea</h1>
+          <!-- 작업 title -->
+          <p>: Responsible Branding Website</p>
+        </div>
+        <div class="go_icon"><a href="../Web_work/lush/lush.html">icon</a></div>
+      </div>
+      <div class="bottom">
+        <img src="../common/images/lush.png" alt="러쉬 웹사이트">
+        <div class="tag_txt">
+          <p>
+            #반응형웹 &nbsp; #MediaQueries <br>
+            #웹표준 &nbsp; #시멘틱마크업 <br>
+            #분할_Layout &nbsp; #flex
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="work work2">
+      <div class="top">
+        <div class="top_txt">
+          <!-- 작업 type -->
+          <h1>Homeplus</h1>
+          <!-- 작업 title -->
+          <p>: Responsible Branding Website</p>
+        </div>
+        <div class="go_icon"><a href="../Web_work/Homeplus/homeplus.html">icon</a></div>
+      </div>
+      <div class="bottom">
+        <img src="../common/images/homeplus.png" alt="홈플러스 웹사이트">
+        <div class="tag_txt">
+          <p>
+            #적응형웹 &nbsp; #MediaQueries
+            #Kakao_API &nbsp; #CSS_animation 
+            #JavaScript_animation
+             
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="work work3">
+      <div class="top">
+        <div class="top_txt">
+          <!-- 작업 type -->
+          <h1>요기레: 요리 기술 레시피</h1>
+          <!-- 작업 title -->
+          <p>: Application UX / UI & Renewal</p>
+        </div>
+        <div class="go_icon"><a href="../Web_work/reciptAPP/recipt.html">icon</a></div>
+      </div>
+      <div class="bottom">
+        <img src="../common/images/recipt_list.png" alt="레시피어플 요기레 모바일 화면">
+        <div class="tag_txt">
+          <p>
+            #Team &nbsp; #XD &nbsp; #Prototype &nbsp; <br>
+            #UI_Design &nbsp; #Renewal &nbsp; #Zeplin <br>
+            #Illustrator &nbsp; #Photoshop
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="work work4">
+      <div class="top">
+        <div class="top_txt">
+          <!-- 작업 type -->
+          <h1>wacom korea</h1>
+          <!-- 작업 title -->
+          <p>: Adaptive Branding Website</p>
+        </div>
+        <div class="go_icon"><a href="../Web_work/wacom/wacom.html">icon</a></div>
+      </div>
+      <div class="bottom">
+        <img src="../common/images/wacom.png" alt="와콤 웹사이트">
+        <div class="tag_txt">
+          <p>
+            #적응형웹 &nbsp; #웹표준 &nbsp; <br>
+            #시멘틱마크업 &nbsp; #animation <br>
+            
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <a href="../about.html">About</a>
+  </footer>
+</div>
+<script>
+  $('.guide .open_btn').on('click',() => {
+      $('.guide_wrap .toggle').slideToggle();
+      $('.open_btn .more').toggleClass('none');
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+/*** 메뉴 옆 세로 라인 ***/
+.container::after {
+  content: '';
+  display: block;
+  background-color: #fff;
+
+  position: absolute;
+  right: 14.219vw;
+  width: 1px; height: 100%;
+  z-index: 10;
+}
+
+/* main */
+.container main {
+  margin-top: 90px;
+  width: 100%; height: auto;
+  box-sizing: border-box;
+  padding-right: 14.219vw;
+  
+  display: flex;
+  flex-flow: column;
+}
+.container main .guide {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 3vw;
+  border-bottom: 1px double #fff;
+}
+.container main .guide h1 { font-size: 2.5rem; height: 55px; color: #ff298d;}
+
+.container main .guide .guide_wrap {
+  width: 100%; box-sizing: border-box; 
+  padding: 50px 50px 120px; margin-bottom: 4vw;
+  background-color: #fff; color: black;
+  position: relative;
+}
+.container main .guide .guide_wrap .open_btn { 
+  border: 1px solid #fff; text-align: center; font-weight: bold;
+  display: flex; flex-flow: column;  overflow: hidden;
+  position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);
+  margin: auto;
+  font-size: 1.5rem; height: 45px; width: 40%;
+  background-color: #fff; color: #000; cursor: pointer;
+  border: 3px solid black;
+}
+.container main .guide .guide_wrap .open_btn div { width: 100%; height: 45px; line-height: 45px;}
+.container main .guide .guide_wrap .open_btn div.more.none { display: none;}
+
+.container main .guide .guide_wrap .open_btn:hover { color: #fff; background-color: #ff298d;border-color: #ff298d; }
+.container main .guide .guide_wrap .toggle { display: none;}
+.container main .guide .guide_wrap .content {
+  display: flex; flex-flow: wrap; 
+  width: 100%; margin-bottom: 30px;
+  justify-content: space-between;
+  overflow: hidden; 
+}
+.container main .guide .guide_wrap .content >h2 {width: 30%; }
+.container main .guide .guide_wrap .content >div { width: 65%;}
+.container main .guide .guide_wrap .content div { margin: 2px 0 0 25px;}
+.container main .guide .guide_wrap h2 { margin: 0 0 12px;}
+.container main .guide .guide_wrap span { font-size: 1.2rem; font-weight: normal; display: block; margin: 0 0 10px;}
+.container main .guide .guide_wrap .favicon  { margin: 0;}
+
+
+.container main .guide::after {
+  content: ''; 
+  width: 100%;
+  position: absolute; 
+  left: 0; bottom: 5px; 
+  border-bottom: 1px solid #fff;
+}
+
+/* main works 123456 - - - */
+.container main .work {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3vw 3vw 4vw;
+  border-bottom: 1px dotted #fff;
+  
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+.container main .work:last-child {
+  border: none;
+}
+/* 상단 영역 */
+.container main .work .top {
+  height: 100%; 
+  margin-bottom: 3vw;
+  grid-row:1/2 ;
+  
+  display: flex;
+  justify-content: space-between;
+}
+.container main .work .top .top_txt {
+  grid-column: 1/2;
+}
+.container main .work .top h1 {
+  margin: 0 0 4px;
+  font-size: 2.5rem;
+  font-size: 3.4vw;
+  text-transform: capitalize;
+}
+.container main .work .top  h1::after {
+  content: '';
+  position: absolute; left: 0; bottom: 0;
+  width: 0%; height: 50%; z-index: -2;
+  background-color: #d4166f;
+  transition: 0.4s;
+}
+.container main .work .top:hover h1:after {width: 100%;}
+
+
+.container main .work .top p {
+  font-size: 1.875vw;
+  margin: 0;
+}
+.container main .work .top .go_icon {
+  width: 50%;
+  height: 20vh; 
+  /* border: 1px solid red; */
+  cursor: pointer;
+  text-indent: -9999px;
+  right: 17vw;
+  position: absolute;
+  background: url(../common/images/Go_White.svg) no-repeat 100% 0 /  25%;
+}
+.container main .work .top .go_icon a {width: 100%; height: 100%;}
+.container main .work .top .go_icon:hover { 
+  background-image: url(../common/images/Go_Pink.svg);
+}
+
+/* 하단 영역 */
+.container main .work .bottom {
+ display: flex;
+ width: 100%;
+ justify-content: space-between;
+ align-items: flex-end;
+}
+
+.container main .work .bottom img {
+  width: 60%; 
+}
+
+.container main .work .bottom .tag_txt {
+  width: 40%; height: 100%;
+  font-size: 1.9vw; font-weight: thin;
+  line-height: 1.5;
+  /* text-transform: uppercase; */
+}
+.container main .work .bottom .tag_txt p {
+  padding-left: 3vw;
+  margin: 0;
+}
+.container main .work .bottom .tag_txt::before {
+  content: '';
+  background-color: #fff;
+  display: inline-block;
+  width: 1.5rem; height: 1.5rem; border-radius: 50%;
+  margin: 1vw 3vw;
+
+}
+
+.container footer { 
+  border-top: 1px solid #fff;
+  height: 15vh; 
+
+  position: relative;
+}
+
+.container footer a {  
+  width: 14.219vw; 
+  text-align: center; font-size: 1.8vw;
+  height: 15vh; line-height: 15vh;
+  
+  position: absolute;
+  right: 0;
+} 
+
+.container main h1 { font-size: 2.5rem; 
+  display: inline-block; 
+  position: relative;
+  z-index: 2;
+}
+
+.container footer a { font-weight: bold;}
+.container footer a:hover { color: #ff298d;}

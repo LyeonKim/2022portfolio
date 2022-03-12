@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/* English */
+@font-face {
+  font-family: "PPNeue";
+  src: url(../fonts/PPNeueMontreal-Bold.woff2) format('woff2'), url(../fonts/PPNeueMontreal-Bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PPNeue";
+  src: url(../fonts/PPNeueMontreal-Medium.woff2) format("woff2"), url(../fonts/PPNeueMontreal-Medium.woff) format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PPNeue";
+  src: url(../fonts/PPNeueMontreal-Book.woff2) format("woff2"), url(../fonts/PPNeueMontreal-Book.woff) format("woff");
+  font-weight: 400, ;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* korean */
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url(../fonts/NotoSans-Regular.woff2) format("woff2"), url(../fonts/NotoSans-Regular.woff) format("woff");
+  font-weight: 400, normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face { 
+  font-family: "Pretendard";
+  src: url(../fonts/Pretendard-Regular.woff2) format("woff2"), url(../fonts/Pretendard-Regular.woff) format("woff");
+  font-weight: 400, normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face { 
+  font-family: "Pretendard";
+  src: url(../fonts/PPNeueMontreal-Bold.woff2) format("woff2"), url(../fonts/Pretendard-Bold.woff) format("woff");
+  font-weight: 600, bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face { 
+  font-family: "Pretendard";
+  src: url(../fonts/Pretendard-Black.woff2) format("woff2"), url(../fonts/Pretendard-Black.woff) format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
