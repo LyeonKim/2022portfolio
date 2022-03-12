@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <!-- og -->
+  <meta property="og:title" content="LUSH Menu Website" >
+  <meta property="og:url" content="#" >
+  <meta property="og:image" content="#" >
+  <meta property="og:desctiption" content="LUSH 메뉴 페이지 입니다." >
+  <!-- twitter -->
+  <meta name="twitter:card" content="LUSH Menu Website">
+  <meta name="twitter:url" content="#">
+  <meta name="twitter:image" content="#">
+  <meta name="twitter:description" content="LUSH 메뉴 페이지 입니다.">
+
+  <title>LUSH Menu Page</title>
+  <!-- favicon -->
+  <link rel="icon" href="../../common/favicon/favicon.ico" size="any">
+  <link rel="svg" href="../common/favicon/favicon.svg" size="any">
+  <link rel="apple-touch-icon" href="../common/favicon/apple-touch-icon 180x180.png">
+  <link rel="manifest" href="../common/favicon/manifest.json"> 
+  <link rel="icon" href="../common/favicon/192x192.png" type="image/svg+xml">
+  <link rel="icon" href="../common/favicon/512x512.png" type="image/svg+xml">
+
+  <!-- fonts -->
+  <link rel="stylesheet" href="../common/css/fonts.css">
+
+  <!-- css -->
+  <link rel="stylesheet" href="menu.css">
+  <!-- script -->
+  <script src="../../common/scripts/prefixfree.min.js"></script>
+  <script src="../../common/scripts/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div id="menu_btn"><a href="#">nav</a></div>
+      <h2>logo</h2>
+    </header>
+    <nav>
+      <ul class="menu">
+        <li><a href="../index.html"><span>01)</span>HOME</a></li>
+        <li><a href="../about/about.html"><span>02)</span>About</a></li>
+        <li><a href="../community/community.html"><span>03)</span>Community</a></li>
+        <li><a href="../campaign/campaign.html"><span>04)</span>Sign Campaign</a></li>
+        <li><a href="https://www.lush.co.kr/" target="_blank"><span>05)</span>Online Shop</a></li>
+        <li><a href="../../index.html"><span>(+)</span>Go Portfolio</a></li>
+      </ul>
+    </nav>
+  </div>
+</body>
+<script>
+  const menuBtn = document.querySelector('#menu_btn');
+
+  menuBtn.addEventListener('click', ()=>{
+    history.back();
+  });
+</script>
+</html>

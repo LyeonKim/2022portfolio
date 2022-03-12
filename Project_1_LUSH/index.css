@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+
+/* header */
+.container header {
+  width: 100%; height: 5vh; 
+  background-color: #000;
+  z-index: 9999999;
+  
+  box-sizing: border-box;
+  padding: 1vh 10px;
+  border-bottom: 1px solid #fff;
+  
+  display: flex; 
+  justify-content: space-between;
+  text-indent: -9999px;
+  
+  position: fixed; top: 0;
+}
+.container .mobile {
+  width: 100%; height: 100%;
+  background-color: #fff;
+  padding: 2vh 0;
+  margin-top: 5vh;
+}
+.container header #menu {
+  width: 100%; height: 100%;
+  background: url(common/images/HamMenu.svg) no-repeat 0 50%  / 3vh ;
+}
+.container header h2 {
+  width: 100%; height: 100%;
+  background: url(common/images/Mobile_LUSHkorea.svg) no-repeat 100% 50%  / contain ;
+}
+
+/* main */
+.container main {
+  width: 100%; 
+  border-bottom: 2px solid #fff;
+}
+.container main #top { visibility: hidden; }
+.container main #bottom { 
+  padding-top: 20vh;
+  font-size: 1.2rem; font-weight: 300;
+}
+.container main #bottom .txt {
+  box-sizing: border-box; padding: 2vh 15px;
+  /* position: absolute; */
+  
+}
+.container main #bottom .txt span { display: block; }
+
+/* aside */
+.container aside {
+  display: flex; flex-flow: column;
+}
+
+/* order 2 */
+.container aside #about {
+  order: 2;
+}.container aside #about {
+  height: 25vh;
+  background-color: #ff4201; color: #000;
+  position: relative;
+  
+}
+.container aside #about a {
+  position: absolute;
+  display: block;
+  width: 100%; height: 100%;
+  font-weight: 700; font-size: 2rem;
+}
+.container aside #about a .go {
+  position: absolute; 
+  top: 15px; right:15px;
+  height: 12vh; width: 12vh;
+  background: url(common/images/Go_Black.svg)  no-repeat;
+}
+.container aside #about a p {
+  position: absolute; 
+  bottom: 15px; left:15px;
+}
+/* order 1 */
+.container aside #move {
+  order: 1;
+
+  width: 100%; height: 15vh;
+  display: flex; 
+  align-items: center;
+
+}
+.container aside #move .mobile_img {
+  width: 100%; height: 10vh;
+  margin-left: 15px; overflow: hidden;
+  background: url(common/images/lush_row_icons_White.svg) no-repeat 0 50%/ cover;
+}
+.container aside #move .img_wrap { display: none;}
+
+.container aside .bottom {
+  order: 3;
+
+  display: flex; flex-flow: column;
+}
+
+
+.container aside .bottom .left {
+  order: 2;
+
+  width: 100%; height: 30vh;
+  background-color: #ddd3c6; color: #000; text-align: center;
+}
+
+.container aside .bottom .left #community {
+  height: 50%; font-size: 5.2vh; font-weight: bold;
+}
+.container aside .bottom .left #community a {
+  box-sizing: border-box; width: 100%; height: 100%; line-height: 17vh;
+}
+
+.container aside .bottom .left #campaign {
+  height: 50%;   
+  background-color: #ddd3c6;
+}
+.container aside .bottom .left #campaign a {
+  width: 100%; height: 100%;
+  position: relative;
+  border-top:5px double #000;
+}
+.container aside .bottom .left #campaign a div {
+  padding: 4vh 0 0.5vh; font-size: 2vh;
+}
+.container aside .bottom .left #campaign a div.sign {
+  font-size: 3vh;  padding-top: 0;
+}
+
+.container aside .bottom #shop {
+  order: 1;
+  
+  width: 60%; height: 20vh;
+  background-color: #045d32;
+  position: relative; 
+}
+.container aside .bottom #shop::after {
+  content: ''; position: absolute; 
+  right: -67%; top: 0; 
+  width: 67%; height: 100%;
+  background: url(common/images/home_mobile_rabbit_icon.svg) no-repeat 50% / 30%; 
+}
+.container aside .bottom #shop .go {
+  position: absolute;
+  top: 3vh; 
+  height: 8vh; width: 100%;
+  background: url(common/images/Go_White.svg)  no-repeat 50%;
+}
+.container aside .bottom #shop p {
+  width: 100%;
+  position: absolute;
+  bottom: 15px; text-align: center;
+  font-size: 1.8rem;
+}

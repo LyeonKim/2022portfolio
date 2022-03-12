@@ -1,0 +1,292 @@
+@charset "UTF-8";
+
+
+.container {
+  width: 100%; height: 100%;
+
+  display: flex;
+}
+
+.container header {
+  width: 100%; height: 5.5vh; 
+  background-color: #000;
+
+  box-sizing: border-box;
+  padding: 1vh 10px;
+  border-bottom: 1px solid #fff;
+
+  display: flex;  flex-flow: row;
+  justify-content: space-between;
+  text-indent: -9999px;
+}
+.container header #menu {
+  width: 100%; height: 100%;
+  background: url(../common/images/HamMenu.svg) no-repeat 0 50%  / 3vh ;
+}
+.container header #menu a {height: 100%;}
+.container header h2 {
+  width: 100%; height: 100%;
+  background: url(../common/images/Mobile_LUSHkorea.svg) no-repeat 100% 50%/ contain ;
+}
+
+.container main {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+.container main #title { padding: 1.7vh; }
+.container main .contents {background-color: #fff; color: #000;}
+.container main #top { padding: 1.7vh;}
+
+.container main .left {
+  width: 100%; height: 15vh;
+  
+  background: url(../common/images/fightAnimalTest.svg) #000 no-repeat 25% 50% /8%;
+  position: relative;
+}
+.container main .left .right_img {
+  height: 15vh; width: 40%;
+  position: absolute; right: 0;
+  opacity: 0.65;
+  background: url(../common/images/rabbit.jpg) no-repeat 0 / cover;
+}
+.container main form {
+  width: 100%; height: 100%;
+  display: flex;
+  flex-flow: column;
+}
+.container main #middle form .box {
+  height: 7vh; line-height: 7vh;
+
+  border-top: 2px solid #000;
+  box-sizing: border-box;
+  display: flex;
+}
+.container main #middle form .box label {
+  box-sizing: border-box;
+  display: block;
+  padding-left: 1.7vh; width: 20%;
+  font-weight: 700;
+  cursor: pointer;
+}
+.container main #middle form .box input {
+  width: 70%; height: 100%;
+  border: 0; outline: 0;
+}
+.container main #middle form .btn_box {
+  width: 100%;
+  display: flex;
+}
+.container main #middle form .btn_box .chk_box {
+  width: 70%;  
+  border-top: 2px solid #000;
+}
+.container main #middle form .btn_box .chk_box .chk {
+  border-bottom: 2px solid #000;
+  width: 100%;  
+  height: 6vh; line-height: 6vh;
+}
+.container main #middle form .btn_box .chk_box .chk label { 
+  font-weight: 300;
+  color: #707070;
+}
+.container main #middle form .btn_box .chk_box .chk input {
+  box-sizing: border-box;
+}
+
+[type="checkbox"]:not(:checked),[type="checkbox"]:checked{
+  opacity: 0;
+} 
+[type="checkbox"]:not(:checked) + label ,[type="checkbox"]:checked  + label {
+  position: relative;
+  padding-left: 10vw;
+  cursor: pointer;
+} 
+[type="checkbox"]:not(:checked) + label:before ,[type="checkbox"]:checked  + label:before {
+  content: 'v';
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2rem; color: #efefef;
+  position: absolute; left: 3%; 
+  width: 30%; height: 100%;
+}
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {  
+  content: 'v';
+  font-family: 'Permanent Marker', cursive;
+  position: absolute;
+  left: 3%; font-size: 2rem; color: green;
+}
+[type="checkbox"]:not(:checked) + label:after { opacity: 0;}
+
+[type="checkbox"]:checked + label:after { opacity: 1; }
+
+.container main #middle form .btn_box button {
+  width: 30%;
+  background-color: #000; color: #fff;
+  outline: none; border-top: 2px solid #000;
+  box-sizing: border-box; 
+  font-weight: 800; font-size: 1.4vw;  }
+
+
+
+
+  /* main- Bottom */
+  .container main #bottom {
+    color: #fff;
+    text-align: center;
+  }
+  .container main #bottom > p { 
+    background-color: #363636 ;
+    font-weight: normal;  font-size: 1.1vw;
+    padding: 5vh;
+  }
+  .container main #bottom > p span {
+    display: block; padding-top: 2vh;
+  } 
+  .container main #bottom .pic {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.877);
+  }
+  .container main #bottom .pic p { 
+    height: 80vh; 
+    font-size: 1.5rem; font-weight: 400;
+    
+  }
+  .container main #bottom .pic p span {
+    display: block; padding: 20vh 0 10vh;
+    font-weight: 800; font-size: 1.8vw;
+  }
+  .container main #bottom .pic .animal_pic {
+    display: block;
+    width: 100%; height: 100%;
+  
+    position: absolute; top: 0;
+    opacity: 0.3;
+    background: url(../common/images/rabbit.jpg) no-repeat 50% / cover;
+  }
+
+.container aside { display: none;}
+
+
+
+/* PC VER :768px 이상 */
+/* PC VER :768px 이상 */
+/* PC VER :768px 이상 */
+@media (min-width:768px) {
+  .container header {
+    width: 5%; height: 100.5vh;
+    box-sizing: border-box;
+    padding: 3vh 0 ;
+    border-right: 1px solid white;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+  }
+  
+  .container header #menu {
+    width: 100%;
+    height: 2.5vw;
+    background: url(../common/images/HamMenu.svg) no-repeat 50% /contain;
+  }
+  .container header #menu a { 
+    width: 100%; height: 100%;
+    text-indent: -9999px;
+  }
+  .container header h2 {  
+    height: 11vw;
+    text-indent: -99999px;
+    
+    background: url(../common/images/Web_LUSHkorea.svg)  no-repeat 50% /contain;
+  }
+
+/* main */
+.container main { width: 85%;} 
+/* main- Top */
+.container main #middle .contents { width: 100%;}
+.container main #top { padding: 2vh 4vh; }
+
+.container main #top p { padding-bottom: 1vw; font-size: 1.2rem;}
+.container main #top h3 { font-size: 2vw;}
+
+/* main- Middle */
+.container main #middle {
+  width: 100%;
+  
+  display: flex;
+}
+.container main #middle .left {
+  width: 30%; height: 100%;
+  background-color: #000;
+  background: url(../common/images/fightAnimalTest.svg) #000 no-repeat 50% /20%;
+}
+.container main .left .right_img { display: none;}
+
+.container main #middle form {
+  width: 100%; height: 80vh;
+}
+
+.container main #middle form .box {
+  border-top: 2px solid #000;
+  box-sizing: border-box;
+  padding-left: 1.8vw; 
+  height: 15vh; line-height: 15vh;
+  
+  display: flex;
+  justify-content: center;
+}
+.container main #middle form .box label {
+  font-weight: 800; font-size: 1.8vw;
+  display: block; 
+  width: 20%; height: 100%;
+}
+.container main #middle form .box input{
+  width: 80%;; height: 100%;
+  font-size: 1.1rem;
+}
+
+.container main #middle form .btn_box {
+  height:20vh; line-height: 10vh;
+  width: 100%;
+  box-sizing: border-box;
+  
+  display: flex;
+}
+.container main #middle form .btn_box .chk_box {
+  width: 70%;
+  
+  display: flex;
+  flex-direction: column;
+}
+.container main #middle form .btn_box .chk_box .chk{
+  height: 10vh; line-height: 10vh;
+}
+[type="checkbox"]:not(:checked) + label:before ,[type="checkbox"]:checked  + label:before {
+ left: 3vw; }
+
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after { 
+  left: 3vw; 
+  
+  /* pc에서 가로사이즈를 바꿀 때, after가 따라오는데에 시간이 걸린다는 문제가 있음... 거슬리면 지우기 */
+  -webkit-transition: all .1s;
+				transition: all .2s;
+}
+
+.container main #middle form .btn_box button {
+  width: 30%;
+  background-color: #000; color: #fff;
+  outline: none; border-top: 2px solid #000;
+  box-sizing: border-box; 
+  font-weight: 800; font-size: 1.7vw;  }
+  
+  .container main #middle form .btn_box button:hover {
+    color: rgb(0, 172, 0); 
+  }
+  
+
+  .container aside { display: block;}
+}
+ 
+  
+  
+  

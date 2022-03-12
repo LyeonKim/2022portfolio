@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+
+.container aside {
+  width: 10%; height: 100vh;
+  
+  /* 스크롤해도 고정되게  */
+  position: fixed; top: 0; right: 0;
+
+  display: flex; 
+  flex-flow: column;
+  z-index: 9999;
+}
+.container aside #about {
+  height: 24vh;
+  background-color: #ff4201; color: #000;
+  position: relative;
+}
+.container aside #about a {
+  position: absolute;
+  display: block;
+  width: 100%; height: 24vh;
+  font-weight: 700; font-size: 0.5rem;
+}
+.container aside #about a .go {
+  position: absolute; 
+  top: 4%; right:8%;
+  height: 45%; width: 30%;
+  background: url(../images/Go_Black.svg)  no-repeat;
+}
+.container aside #about a p {
+  position: absolute; 
+  bottom: 4%; left: 8%;
+  font-size: 0.8rem; 
+}
+.container aside #about:hover {color: #fff;}
+.container aside #about:hover a .go {background: url(../images/Go_White.svg)  no-repeat;}
+
+
+
+.container aside #move {
+  height: 11vh; width: 100%;
+  background-color: #000;
+  display: flex; 
+  align-items: center;
+}
+.container aside #move .img {
+  width: 100%; height: 60%;
+  margin-left: 5%; overflow: hidden;
+  background: url(../images/lush_row_icons_White.svg) no-repeat 0 50%/ cover; 
+}
+
+
+
+
+.container aside #community { 
+  height: 20vh; line-height: 19.5vh; font-size: 1.1vw;
+  background-color: #ddd3c6; color: #000; text-align: center;
+}
+.container aside #community:hover { background-color: #fff;}
+
+
+
+
+.container aside  #campaign {
+  height: 15vh;   
+  background-color: #ddd3c6; color: #000; text-align: center;
+}
+
+.container aside  #campaign a {
+  width: 100%; height: 8vh;
+}
+.container aside  #campaign a div {
+  border-top: 2px solid #000;
+  font-size: 0.6vw; height: 5vh; line-height: 5vh;
+}
+.container aside  #campaign a div.sign {
+  font-size: 1vw; height: 10vh; line-height: 10vh;
+}
+.container aside #campaign:hover { background-color: #fff;}
+
+
+/* online shop */
+.container aside  #shop {
+  height: 35%;
+  background-color: #045d32;
+  position: relative;
+}
+.container aside  #shop .go {
+  position: absolute; right: 8%; top: 4%;
+  height: 45%; width: 30%;
+  background: url(../images/Go_White.svg)  no-repeat;
+}
+.container aside #shop p {
+  position: absolute; left: 8%; bottom: 18%;
+  font-size: 0.8rem; text-transform: uppercase;
+}
+.container aside #shop p {bottom: 18%;}
+
+.container aside #shop:hover {color: #000;}
+.container aside #shop:hover a .go {background: url(../images/Go_Black.svg)  no-repeat;}

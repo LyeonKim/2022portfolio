@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+.container {
+  width: 100%; height: 100%;
+
+  display: flex;
+}
+
+.container header {
+  width: 100%; height: 5.5vh; 
+  background-color: #000;
+
+  box-sizing: border-box;
+  padding: 1vh 10px;
+  border-bottom: 1px solid #fff;
+
+  display: flex;  flex-flow: row;
+  justify-content: space-between;
+  text-indent: -9999px;
+}
+.container header #menu {
+  width: 100%; height: 100%;
+  background: url(../common/images/HamMenu.svg) no-repeat 0 50%  / 3vh ;
+}
+.container header #menu a {height: 100%;}
+.container header h2 {
+  width: 100%; height: 100%;
+  background: url(../common/images/Mobile_LUSHkorea.svg) no-repeat 100% 50%/ contain ;
+}
+.container main {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  font-weight: 400;
+}
+.container main #title { padding: 1.7vh; }
+.container main .contents { background-color: #fff; color: #000;}
+.container main #top {padding: 1.7vh; text-align: center;}
+.container main #top h3 {
+  text-indent: -9999px; 
+  /* width: 50px; */
+  margin-top: 5vh;
+  height: 5vh;
+  background: url(../common/images/light_icon.svg) no-repeat 50%/ contain;
+ }
+.container main #top p { width: 100%; line-height: 1.2;
+  padding: 2vh 0 3vh;
+}
+
+.container main #top hr {
+  width: 85%; height: 1px; background-color: #000;
+}
+.container main #middle { text-align: center; padding: 3% 5%;}
+.container main #middle .title { font-weight: 700; padding: 2% 0 5%; font-size: 1.5rem; }
+.container main #middle .value .img {
+  width: 100%; height: 35vh;
+  background: no-repeat 50% /cover;
+}
+.container main #middle .value1 .img {background-image: url(../common/images/value1.jpg);}
+.container main #middle .value2 .img {background-image: url(../common/images/value2.jpg);}
+.container main #middle .value3 .img {background-image: url(../common/images/value3.jpg);}
+.container main #middle .value4 .img {background-image: url(../common/images/value4.jpg);}
+.container main #middle .value .txt {
+  padding: 40px 40px 70px; font-size: 1.1rem;
+  display: flex; flex-flow: column; justify-content: flex-end;
+  position: relative;
+}
+.container main #middle .value .txt::after {
+  content: ''; position: absolute; bottom: 35px; left: 0;
+  width: 100%; height: 2px; background-color: #000;
+}
+.container main #middle .value4 { padding-bottom: 10vh;}
+
+.container main br { display: none;} 
+.container aside { display: none;}
+
+@media (min-width:768px) {
+  /* header */
+  .container main br {display: initial;} 
+  
+  .container header {
+    width: 5%; height: 100.5vh;
+    box-sizing: border-box;
+    padding: 3vh 0 ;
+    border-right: 1px solid white;
+    
+    /* position: fixed; left: 0; top: 0; */
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+  }
+  
+  .container header #menu {
+    width: 100%;
+    height: 2.5vw;
+    background: url(../common/images/HamMenu.svg) no-repeat 50% /contain;
+  }
+  .container header #menu a { 
+    width: 100%; height: 100%;
+    text-indent: -9999px;
+  }
+  .container header h2 {  
+    height: 11vw;
+    text-indent: -99999px;
+    
+    background: url(../common/images/Web_LUSHkorea.svg)  no-repeat 50% /contain;
+  }
+
+/* main */
+  .container main { width: 85%;}
+  .container main #middle { 
+    display: flex; flex-flow: column;
+    width: 100%; padding: 0;
+  }
+  .container main #middle .value {
+    width: 100%; height: 50vh;
+    display: flex;
+  }
+  .container main #middle .value .img {
+    width: 50%; height: 100%;
+  }
+  .container main #middle .value .txt {
+    width: 50%; height: 50vh; 
+    box-sizing: border-box;
+    padding: 15% 5% 5%;
+    text-align: left; font-size: 1.4rem;
+    
+  }
+  .container main #middle .value1 .txt { border-top: 1px solid #000; }
+  .container main #middle .value4 .txt {border-bottom: 1px solid #000;}
+  .container main #middle .value .txt::after {display: none;}
+
+  .container main #middle .value:nth-child(odd) .img { order: 2;}
+  .container main #middle .value:nth-child(odd) .txt { order: 1;}
+  
+/* aside */
+  .container aside { display: block;}
+
+}

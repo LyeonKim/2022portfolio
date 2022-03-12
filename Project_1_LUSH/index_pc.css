@@ -1,0 +1,216 @@
+@charset "UTF-8";
+
+/***** pc 1920 *****/
+.container {
+  background-color: #000; color: white;
+  width: 100%; height: 100vh;
+  font-family: "Pretendard";
+  font-weight: 400;
+
+  display: flex;
+  overflow: hidden;
+}
+/* header */
+
+.container .mobile {display: none;}
+
+/* main */
+.container main {
+  width: 60%; height: 100%;
+
+  display: flex; 
+  flex-flow: column;
+}
+.container main #top { 
+  height: 75%;
+  position: relative;
+  visibility: visible;
+  margin-top: 0 ;
+}
+.container main #top .txt {
+  position: absolute; 
+  bottom: 0; 
+  top: 20%; 
+  left: 5%;
+  z-index: 1000;
+  text-indent: -9999px;
+  width: 75%; 
+  height: 80%;
+  background: url(common/images/home_top.svg) no-repeat 0 / contain;
+}
+.container main #top .img { 
+  display: block;
+  width: 100%; height: 100%;
+
+  position: absolute; top: 0;
+
+  opacity: 0.3;
+  background: url(common/images/home_top.jpg) no-repeat 0 0 /cover;
+}
+.container main #bottom {
+  height: 25%;
+  box-sizing: border-box;
+  padding: 5vh;
+  
+  position: relative;
+}
+.container main #bottom .txt {
+  position: absolute; bottom: 5vh;
+  font-size: 2.2vh;
+}
+.container main #bottom .txt span { 
+  display: block; margin: 5px 0;
+}
+
+
+
+
+/* aside */
+.container aside {
+  width: 35%; height: 100%;
+  
+  display: flex; 
+  flex-flow: column;
+}
+.container aside #about {
+  order: 1;
+  height: 50%;
+  background-color: #ff4201; color: #000;
+  position: relative;
+  
+}
+.container aside #about a {
+  position: absolute;
+  /* box-sizing: border-box; padding: 3vh; */
+  display: block;
+  width: 100%; height: 100%;
+  font-weight: 700; font-size: 2rem;
+}
+.container aside #about a .go {
+  position: absolute; 
+  top: 3vh; right:3vh;
+  height: 45%; width: 30%;
+  background: url(common/images/Go_Black.svg)  no-repeat;
+}
+.container aside #about a p {
+  position: absolute; 
+  bottom: 3vh; left:3vh;
+}
+
+.container aside #about:hover {color: #fff;}
+.container aside #about:hover a .go {background: url(common/images/Go_White.svg)  no-repeat;}
+
+
+
+.container aside #move {
+  order: 2;
+
+  height: 25%; width: 100%;
+  /* background: url(common/images/lush_row_icons_White.svg) no-repeat 0 50%/ cover; */
+  display: flex; 
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes move {
+  0% { left: 0; }
+  10% { left:-100%; }
+  20% { left:-200%; }
+  30% { left:-300%; }
+  40% { left:-400%; }
+  50% { left:-500%; }
+  60% { left:-600%; }
+  70% { left:-700%; }
+  80% { left:-800%; }
+  90% { left:-900%; }
+  99% { left:-1000%; }
+  100% { left:0%; }
+}
+.container aside #move .mobile_img {display: none;}
+.container aside #move .img_wrap {
+  overflow: hidden; box-sizing: border-box;
+  height: 100%; padding: 10% 0;
+  display: flex;
+  animation: move 30s linear infinite;
+  animation-iteration-count: infinite;
+  position: absolute; left: 0; top: 0;
+}
+
+.container aside #move .img_wrap img { 
+  height: 100%; 
+  margin-left: 4.5vw;
+  background: url(common/images/lush_row_icons_White.svg) 0 50%/ cover;
+}
+.container aside #move .img_wrap:hover {animation-play-state: paused; }
+
+
+
+.container aside .bottom {
+  order: 3;
+  height: 25%; width: 100%;
+  
+  flex-flow: row;
+}
+.container aside .bottom .left {
+  display: flex; flex-flow: column;
+  width: 50%; height: 100%;
+  color: #000;
+  text-align: center;
+}
+.container aside .bottom .left #community {
+  height: 50%; 
+  background-color: #ddd3c6;
+  
+  font-size: 2.3vw; font-weight: bold;
+}
+.container aside .bottom .left #community a {
+  box-sizing: border-box; padding: 2vh;
+  width: 100%; height: 100%;
+  line-height: 9vh;
+}
+.container aside .bottom .left #community:hover { background-color: #fff;}
+
+
+.container aside .bottom .left #campaign {
+  height: 50%;   
+  background-color: #ddd3c6;
+}
+.container aside .bottom .left #campaign a {
+  width: 100%; height: 100%;
+  position: relative;
+  border: none;
+}
+.container aside .bottom .left #campaign a div {
+  border-top: 2px solid #000;
+  padding: 1.5vh 0; font-size: 1vw;
+}
+.container aside .bottom .left #campaign a div.sign {
+  padding-top: 1vh; font-size: 1.8vw;
+}
+.container aside .bottom .left #campaign:hover { background-color: #fff;}
+
+
+.container aside .bottom #shop {
+  order: 2;
+
+  width: 50%; height: 100%;
+  background-color: #045d32;
+  position: relative;
+}
+.container aside .bottom #shop::after {display: none;}
+
+.container aside .bottom #shop .go {
+  position: absolute;
+  right: 2vh; top: 2vh;
+  height: 45%; width: 30%;
+  background: url(common/images/Go_White.svg)  no-repeat;
+}
+.container aside .bottom #shop p {
+  position: absolute;
+  left: 2vh; bottom: 2vh;
+  font-size: 1.8rem; text-align: left;
+}
+.container aside .bottom #shop:hover {color: #000;}
+.container aside .bottom #shop:hover a .go {background: url(common/images/Go_Black.svg)  no-repeat;}
+
