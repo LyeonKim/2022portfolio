@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+    /* 구조 보삼요 #value .value .face .move .box.box$*12 */
+.container aside #value .inner .value .face .move {
+  width: 140%; 
+  display: flex;
+  flex-flow: wrap;
+  position: absolute;
+  bottom: 0; left: -20%;
+  
+}
+.container aside #value .inner .value .face .move .box {
+  width: 25%; padding-bottom: 25%;
+  
+  border-radius: 50%;
+  background-color: #fff; 
+  position: relative;
+  /* z-index: 100; */
+}
+.container aside #value .inner .value .face .move2 .box
+, .container aside #value .inner .value .face .move4 .box {
+  background-color: #b40610;
+}
+.container aside #value .inner .value .face .move .box::after {
+  content: '';
+  position: absolute;
+  width: 100%; height: 100%;
+  bottom: 0;
+  z-index: -9;
+  opacity: 0.3;
+  
+  
+  background-color: #b40610;
+}
+.container aside #value .inner .value .face .move2 .box::after,
+.container aside #value .inner .value .face .move4 .box::after {
+  opacity: 0.4;
+  background-color: #fff;
+}
+
+.container aside #value .inner .value .face .move4 { bottom: -5%;}
+
+
+
+
+/* 원radius */
+.container aside #value .inner .value .face .move .corner1 { border-radius: 0 50% 50% 50%;}
+.container aside #value .inner .value .face .move .corner2 { border-radius: 50% 0 50% 50%;}
+.container aside #value .inner .value .face .move .corner3 { border-radius: 50% 50% 0 50%;}
+.container aside #value .inner .value .face .move .corner4 { border-radius: 50% 50% 50% 0;}
+.container aside #value .inner .value .face .move .full { border-radius: 0;}
+  
+
+/* 원의 값 삭제 */
+.container aside #value .inner .value .face .move .non {  background-color: transparent;}
+/* 원x 정사각형 */
+.container aside #value .inner .value .face .move .box.square {border-radius: 0;}
+
+/* 꾸밈값 . .box의 배경을 이용 */
+    /*  half T /R /L /B  지칭하는 부분 radius 보임(원모양임) */
+.container aside #value .inner .value .face .move .halfB::after {
+   height: 50%; }
+.container aside #value .inner .value .face .move .halfT::after {
+  height: 50%; top: 0;}
+  .container aside #value .inner .value .face .move .halfL::after {
+  width: 50%; 
+  }
+  .container aside #value .inner .value .face .move .halfR::after {
+    width: 50%; right: 0;
+  }
+  .container aside #value .inner .value .face .move .bgN::after {
+    opacity: 0;
+  }
+
+
+
+  /*------------- smile & stars 제어!! -------------*/
+  /*------------- smile & stars 제어!! -------------*/
+  /*------------- smile & stars 제어!! -------------*/
+  /*------------- smile & stars 제어!! -------------*/
+
+/* 이미지svg 제어 */
+.container aside #value .inner .value .face .move .box img { 
+  position: absolute; width: 100%; height: 100%;
+  z-index: 2;
+}
+/* 개별제어  */
+.container aside #value .inner .value .face .move .box img {
+  animation: 2.5s ease 0s infinite;
+}
+.container aside #value .inner .value .face .move .box img.star {
+  width: 100%; bottom: 50%; left: 50%; 
+}
+
+.container aside #value .inner .value .face .move .box img.star1 { animation-name: star1;}
+@keyframes star1 {
+  0%    { opacity: 1;}
+  50%   { opacity: 0.3;}
+  100%  { opacity: 1;}
+}
+.container aside #value .inner .value .face .move .box img.star2 { animation-name: star2;}
+@keyframes star2 {
+  0%    { opacity: 0.1;}
+  50%   { opacity: 1;}
+  100%  { opacity: 0.1;}
+}
+.container aside #value .inner .value .face .move .box img.star3 { animation-name: star3;}
+@keyframes star3 {
+  0%   { transform: scale(0.2);}
+  50%  { transform: scale(1);}
+  100% { transform: scale(0.2);}
+}
+
+
+
+.container aside #value .inner .value .face .move .box img.smile {
+  width: 50%; bottom: 0%; right: 25%; 
+}
+.container aside #value .inner .value .face .move .box img.smile1 { animation-name: smile1;}
+@keyframes smile1 { /*중간에 왼쪽으로*/
+  0%   {transform: translateX(-20px);}
+  50%  {transform: translateX(0px);}
+  100% {transform: translateX(-20px);}
+}
+.container aside #value .inner .value .face .move .box img.smile2 { animation-name: smile2;}
+@keyframes smile2 { /*중간에 오른쪽로*/
+  0%   {transform: translateX(15px);}
+  50%  {transform: translateX(0px);}
+  100% {transform: translateX(15px);}
+} 
+.container aside #value .inner .value .face .move .box img.smile3 { animation-name: smile3; bottom: 0;}
+@keyframes smile3 { /*중간에 아래로*/
+  0%   {transform: translateY(-10px);}
+  50%  {transform: translateY(15px);}
+  100% {transform: translateY(-10px);}
+} 
+.container aside #value .inner .value .face .move .box img.smile4 { animation-name: smile4; bottom: 0; }
+@keyframes smile4 { /*중간에 위로*/
+  0%   {transform: translateY(15px);}
+  50%  {transform: translateY(-10px);}
+  100% {transform: translateY(15px);}
+}
+.container aside #value .inner .value .face .move .box img.smile5 { animation-name: smile5; bottom: 0; }
+@keyframes smile5 { /*중간에 왼쪽으로 + 오퍼시티*/
+  0%   { opacity: 0.3; transform: translateX(-20px);}
+  50%  { opacity: 1; transform: translateX(0px);}
+  100% { opacity: 0.3; transform: translateX(-20px);}
+}
+.container aside #value .inner .value .face .move .box img.smile6 { animation-name: smile6; bottom: 0; }
+@keyframes smile6 { /*중간에 오른쪽으로 + 오퍼시티*/
+  0%   { opacity: 0.3; transform: translateX(15px);}
+  50%  { opacity: 1; transform: translateX(0px);}
+  100% { opacity: 0.3; transform: translateX(15px);}
+}
