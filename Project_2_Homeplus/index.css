@@ -45,6 +45,7 @@
 
 .container header .slide_menu ul li:last-child { position: absolute; bottom: 5vh; width: 85%;}
 .container header .slide_menu ul li:hover { color: #000; border-color: #000;}
+.container header .slide_menu ul li:hover a { color: #000;}
 
 .container header .slide_menu.active { right: 0;}
 .container header #gnb.active { background-image: url(common/images/menu_w.svg);}
@@ -163,3 +164,4 @@
 }
 .container footer .pf a { width: 100%;  height: 100%;}
 .container footer .pf:hover { background-color: #000; color: #fff;}
+.container footer .pf:hover a { color: #fff;}
