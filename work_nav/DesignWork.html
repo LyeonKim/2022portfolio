@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+
+  <!-- og -->
+  <meta property="og:title" content="ChaeLyeon Kim's Portfolio" >
+  <meta property="og:url" content="https://lyeon22pf.netlify.app/" >
+  <meta property="og:image" content="https://lyeon22pf.netlify.app/common/images/OG.png" >
+  <meta property="og:desctiption" content="김채련의 포트폴리오입니다." >
+
+  <title>ChaeLyeon Kim's Design Work Page</title>
+  <!-- favicon -->
+  <link rel="icon" href="../common/favicon/favicon.ico" size="any">
+  <link rel="svg" href="../common/favicon/favicon.svg" size="any">
+  <link rel="apple-touch-icon" href="../common/favicon/apple-touch-icon 180x180.png">
+  <link rel="manifest" href="../common/favicon/manifest.json"> 
+  <link rel="icon" href="../common/favicon/192x192.png" type="image/svg+xml">
+  <link rel="icon" href="../common/favicon/512x512.png" type="image/svg+xml">
+  <!-- fonts -->
+  <link rel="stylesheet" href="../common/css/fonts.css">
+  <!-- css -->
+  <link rel="stylesheet" href="../common/css/style.css">
+  <link rel="stylesheet" href="../common/css/HeaderMenu.css">
+  <link rel="stylesheet" href="DesignWork.css">
+  <!-- script -->
+  <script src="../common/scripts/prefixfree.min.js"></script>
+  <script src="../common/scripts/jquery-3.6.0.min.js"></script>
+  <script defer src="../common/scripts/menu.js"></script>
+
+</head>
+<body>
+<div class="container">
+  <header>
+    <!-- 현재 페이지 -->
+    <h1><a href="/">DESIGN WORK</a></h1>
+  </header>
+  <div class="hamburger_menu">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <div id="menu_wrapper">
+    <nav id="menu">
+      <ul>
+        <li>
+          <a href="../index.html">HOME</a>
+        </li>
+        <li>
+          <a href="WebUIUXwork.html">WEB & UI/UX WORK</a>
+        </li>
+        <li>
+          <a href="#">DESIGN WORK</a>
+        </li>
+        <li>
+          <a href="../about.html">ABOUT ME</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <main>
+      <ul class="work_wrap">
+        <li class="work work1">
+          <div>
+            Personal 
+            <br>Identitiy
+            <br> Design
+          </div>
+          <a href="../Design_work/CherryOn/cherry.html"></a>
+        </li>
+        <li class="work work2">
+          <div>
+            Character 
+            <br> Design
+          </div>
+          <a href="../Design_work/Liriz/liriz.html"></a>
+        </li>
+        <li class="work work3">
+          <div>
+            Brand 
+            <br>Identitiy
+            <br> Design
+          </div>
+          <a href="../Design_work/Tlog/tlog.html"></a>
+        </li>
+        <li class="work work4">
+          <div>
+            Brand 
+            <br>Identitiy
+            <br> Design
+          </div>
+          <a href="../Design_work/Baro/baro.html"></a>
+        </li>
+        <li class="work work5">
+          <div>
+            Brand 
+            <br>Identitiy
+            <br> Design
+          </div>
+          <a href="../Design_work/Bmine/Bmine.html"></a>
+        </li>
+        <li class="work work6">
+          <div>
+            Public
+            <br> Design
+          </div>
+          <a href="../Design_work/publicDesign/public.html"></a>
+        </li>
+      </ul>
+  </main>
+  <footer>
+    <div>
+      copyright&copy; All rights reserved by CHAELYEON KIM
+    </div>
+    <div class="about">
+      <a href="../about.html">About</a>
+    </div>
+  </footer>
+</div>
+<script>
+  $('.guide .open_btn').on('click',() => {
+      $('.guide_wrap .toggle').slideToggle();
+      $('.open_btn .more').toggleClass('none');
+    });
+</script>
+</body>
+</html>

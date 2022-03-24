@@ -28,7 +28,7 @@
   padding: 0 3vw;
   border-bottom: 1px double #fff;
 }
-.container main .guide h1 { font-size: 2.5rem; height: 55px; color: #ff298d;}
+.container main .guide h1 { font-size: 2.5rem; height: 55px; color: #ff3995;}
 
 .container main .guide .guide_wrap {
   width: 100%; box-sizing: border-box; 
@@ -108,7 +108,7 @@
   content: '';
   position: absolute; left: 0; bottom: 0;
   width: 0%; height: 50%; z-index: -2;
-  background-color: #d4166f;
+  background-color: #ff3995;
   transition: 0.4s;
 }
 .container main .work .top:hover h1:after {width: 100%;}
