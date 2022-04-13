@@ -33,8 +33,7 @@
   display: flex;
   flex-flow: column;
 }
-.container main #title { font-size: 3.3vw; padding: 3vh; }
-.container main .contents {background-color: #fff; color: #000;}
+.container main #title { font-size: 3.3vw; padding: 1.7vh; }.container main .contents {background-color: #fff; color: #000;}
 .container main #top { padding: 3vh;}
 /* .container main #top h3 { font-size: 1.2rem;} */
 
