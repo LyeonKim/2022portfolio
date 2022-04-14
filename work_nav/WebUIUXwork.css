@@ -62,7 +62,7 @@
 .container main .guide .guide_wrap h2 { margin: 0 0 12px;}
 .container main .guide .guide_wrap span { font-size: 1.2rem; font-weight: normal; display: block; margin: 0 0 10px;}
 .container main .guide .guide_wrap .favicon  { margin: 0;}
-
+.container main .guide .guide_wrap .favicon_toggle  { margin-left: 25px;}
 
 .container main .guide::after {
   content: ''; 
