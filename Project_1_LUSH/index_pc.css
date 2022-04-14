@@ -132,7 +132,7 @@
   overflow: hidden; box-sizing: border-box;
   height: 100%; padding: 10% 0;
   display: flex;
-  animation: move 30s linear infinite;
+  animation: move 60s linear infinite;
   animation-iteration-count: infinite;
   position: absolute; left: 0; top: 0;
 }
