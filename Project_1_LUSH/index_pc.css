@@ -115,24 +115,18 @@
 
 @keyframes move {
   0% { left: 0; }
-  10% { left:-100%; }
-  20% { left:-200%; }
-  30% { left:-300%; }
-  40% { left:-400%; }
-  50% { left:-500%; }
-  60% { left:-600%; }
-  70% { left:-700%; }
-  80% { left:-800%; }
-  90% { left:-900%; }
-  99% { left:-1000%; }
-  100% { left:0%; }
+  20% { left:-100%; }
+  40% { left:-200%; }
+  60% { left:-300%; }
+  80% { left:-400%; }
+  100% { left:-500%; }
 }
 .container aside #move .mobile_img {display: none;}
 .container aside #move .img_wrap {
   overflow: hidden; box-sizing: border-box;
   height: 100%; padding: 10% 0;
-  display: flex;
-  animation: move 60s linear infinite;
+  display: flex; flex-flow: nowrap;
+  animation: move 20s linear infinite alternate;
   animation-iteration-count: infinite;
   position: absolute; left: 0; top: 0;
 }
@@ -140,7 +134,6 @@
 .container aside #move .img_wrap img { 
   height: 100%; 
   margin-left: 4.5vw;
-  background: url(common/images/lush_row_icons_White.svg) 0 50%/ cover;
 }
 .container aside #move .img_wrap:hover {animation-play-state: paused; }
 
