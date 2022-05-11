@@ -110,10 +110,8 @@
 }
 .container aside #keywords p { margin:0 auto 8vh ;}
 .container aside #keywords ul {
-  display: flex;
-  flex-flow: wrap;
-  margin: auto;
-  width: 50%;
+  width: 50%; margin: 0 auto;
+  display: flex; flex-flow: wrap; justify-content: space-between ;
 }
 .container aside #keywords ul .key {
   width: 45%; height: 15vh; line-height: 15vh;
@@ -121,8 +119,7 @@
   font-size: 25px; font-weight: 500;
   margin: 1vw;
 }
-/* .container aside #keywords ul .key:nth-child(even) { border-radius: 0 7.5vh 7.5vh 0;} */
-/* .container aside #keywords ul .key:nth-child(odd) { border-radius: 7.5vh 0 0 7.5vh;} */
+
 .container aside #keywords ul .key:hover  {
   background-color: black;
 }
